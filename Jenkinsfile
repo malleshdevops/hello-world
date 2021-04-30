@@ -2,7 +2,7 @@
 pipeline {
 	agent { label 'jenkins_slave2' }
         tools {
-    maven 'maven3'
+    maven 'Maven3'
   }
     stages {
         stage('Hello') {
