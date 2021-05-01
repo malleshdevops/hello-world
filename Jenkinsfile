@@ -1,11 +1,12 @@
 
 pipeline {
-	agent { label 'jenkins_slave2' }
+	
         tools {
     maven 'Maven3'
   }
     stages {
         stage('Hello') {
+		agent { label 'jenkins_slave2' }
             steps {
                 echo 'Hello World'
             }
